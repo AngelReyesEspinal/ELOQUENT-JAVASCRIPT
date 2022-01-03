@@ -11,7 +11,7 @@ console.log(reverseArray(arr));
 // reverse arr in place
 let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 const reverseArray = (arr) => {
-    let halfArrLength = Math.floor(arreglo.length / 2);
+    let halfArrLength = Math.floor(arr.length / 2);
     for (let i = 0; i < halfArrLength; i++) {
         const lastPosition = (arr.length - 1) - i;
         const lastValue = arr[lastPosition];
@@ -21,3 +21,4 @@ const reverseArray = (arr) => {
 }
 reverseArray(arr);
 console.log(arr);
+
