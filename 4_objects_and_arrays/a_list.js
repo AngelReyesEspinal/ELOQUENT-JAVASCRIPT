@@ -1,17 +1,9 @@
 const arrayToList = (elements = []) => {
     let list = {};
     for (let i = (elements.length - 1); i >= 0; i--) {
-        const currentValue = elements[i];
-        if ('value' in list) {
-            list = {
-                value: currentValue,
-                rest: list
-            }
-        } else {
-            list = {
-                value: currentValue,
-                rest: {}
-            }
+        list = {
+            value: elements[i],
+            rest: list
         }
     }
     return list;
